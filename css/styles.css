@@ -116,15 +116,16 @@ ul{
 .icon-envelope{
         margin-right: 10px;
         text-align: center;
+        justify-content: center;
         color: #757575;
         fill: currentColor;
 }
-/*.icon-envelope:hover, 
+.icon-envelope:hover, 
 .icon-envelope:focus{
         color:#2196F3;
         
 }
-.email::before{
+/*.email::before{
         width: 20px;
         height: 20px;
         content:"";
