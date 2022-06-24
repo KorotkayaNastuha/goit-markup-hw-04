@@ -322,6 +322,32 @@ ul{
         fill: currentColor;
 
 }
+/*client section*/
+.logo-client{
+        display: flex;
+        gap: 30px;
+}
+.client{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;       
+        color: #212121;
+}
+.icon-client{
+        width: 170px;
+        height: 92px;
+        margin-top: 50px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        
+}
+.client1, .client2, .client3, .client4, .client5, .client6{
+        margin: 16px 32px;
+}
+.client4{
+        color: #AFB1B8;
+}
 /*portfolio*/
 
 .btn-portfolio{
