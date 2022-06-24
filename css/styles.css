@@ -106,11 +106,25 @@ ul{
 .email{
         margin-right: 50px;
 }
-.icon-envelope{
-        width: 20px;
-        height: 20px;
+.email:hover, .tel:hover, .email:focus, .tel:focus{
+        color: #2196F3;      
 }
-/*.email::before{
+.email-tel{
+        display: flex;
+        margin: auto;        
+}
+.icon-envelope{
+        margin-right: 10px;
+        text-align: center;
+        color: #757575;
+        fill: currentColor;
+}
+/*.icon-envelope:hover, 
+.icon-envelope:focus{
+        color:#2196F3;
+        
+}
+.email::before{
         width: 20px;
         height: 20px;
         content:"";
@@ -118,14 +132,7 @@ ul{
         background-image: url(../img/images/icons.svg#icon-envelope-hover);
         
 }*/
-.email:hover, .tel:hover, .email:focus, .tel:focus{
-        color: #2196F3;      
-}
-.email-tel{
-        display: flex;
-        margin: auto;
-        
-}
+
 /*main section*/
 .section{
         padding-top: 94px;
@@ -195,14 +202,16 @@ ul{
 .item{
         width: 270px;
 }
-.item::before{
-        display: block;
-        content: "";
-        height: 120px;
-        background: #F5F4FA;
+.icon-item{
+        text-align: center;
         margin-bottom: 30px;
-        background-image: url(../img/images/icons.svg#icon-envelope-hover);
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+
 }
+
 .subtitle-contanier li{
         justify-content: flex-start;
 }
@@ -280,6 +289,36 @@ ul{
 .name-job{
         padding-top: 30px;
         padding-bottom: 30px;
+
+}
+.teamled-social{
+        display: flex;
+        width: 206px;
+        height: 44px;
+        margin-top: 16px;
+        margin-left: 32px;
+        padding:0;
+        justify-content: center;
+}
+.social-icon{
+        fill: currentColor;
+}
+.social-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color:#AFB1B8; 
+            
+}
+
+.social-link:hover,
+.social-link:focus {
+        background-color: #2196F3;
+        color:#FFFFFF;
+        fill: currentColor;
 
 }
 /*portfolio*/
