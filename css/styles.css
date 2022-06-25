@@ -335,18 +335,82 @@ ul{
         color: #212121;
 }
 .icon-client{
+        display: block;
         width: 170px;
         height: 92px;
         margin-top: 50px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
+        color: #AFB1B8;
         
 }
 .client1, .client2, .client3, .client4, .client5, .client6{
         margin: 16px 32px;
+        fill: currentColor;
 }
-.client4{
-        color: #AFB1B8;
+.icon-client:hover,
+.icon-client:focus{
+        color: #2196F3;
+        border: 1px solid #2196F3;
+        fill: currentColor;
+}
+/*Footer socials*/
+.adress-social{
+        display: flex;
+        align-items: baseline;
+
+}
+.footer-address{
+       
+}
+
+.footer-social {
+        display: flex;
+        display: block;
+        width: 206px;
+        height: 80px; 
+        margin-left: 70px;
+        padding: 0;
+        
+}
+.joint{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+}
+.links{
+        display: flex;
+        padding-top: 20px;
+        gap: 10px;
+        color: #FFFFFF;
+}
+
+.social-icons {
+        fill: currentColor;
+}
+
+.social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: #FFFFFF;
+
+        background: rgba(255, 255, 255, 0.1);
+
+}
+.social-links:hover,
+.social-links:focus {
+        background-color: #2196F3;
+        color: #FFFFFF;
+        fill: currentColor;
+
 }
 /*portfolio*/
 
@@ -354,9 +418,7 @@ ul{
         display: flex;
         justify-content: center;
         margin: auto;
-        padding-left: 0px;
-        
-
+        padding-left: 0px;        
 }
 /*filters*/
 .filters{
@@ -438,6 +500,9 @@ ul{
         margin-bottom: 0;
         gap: 30px;      
 } 
+.box-project:first-child{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .box-project{
         box-sizing: border-box;
         margin: auto;
@@ -449,11 +514,8 @@ ul{
         border-left: 1px solid #ECECEC;
         border-right: 1px solid #ECECEC;
         padding: 20px 24px;
-
-
 }
 .project{
-
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
@@ -467,6 +529,4 @@ ul{
         line-height: 1.8;
         letter-spacing: 0.03em;
         color: var(--main-color);
-
-
 }
