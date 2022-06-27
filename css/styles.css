@@ -43,6 +43,7 @@ ul{
 .items{
         background: #FFFFFF;
         display: flex;
+        align-items: center;
        
 }
 .nav{
@@ -91,6 +92,10 @@ ul{
 .link, .link-1, .link-2, .link-3{
         text-decoration: none;
 }
+.link-2:hover, .link-3:hover,
+.link-2:focus, .link-3:focus{
+        color: #2196F3;
+}
 /*email and tel*/
 .email, .tel{
         font-style: normal;
@@ -102,30 +107,40 @@ ul{
         text-decoration: none; 
         display: flex;
         justify-content: center;
+        align-items: center;
+        fill: currentColor;
 }
 .email{
         margin-right: 50px;
 }
+.email>svg, .tel>svg{
+        margin-right: 10px;
+}
 .email:hover, .tel:hover, .email:focus, .tel:focus{
-        color: #2196F3;      
+        color: #2196F3; 
+        fill: currentColor;
+        
 }
 .email-tel{
         display: flex;
-        margin: auto;        
+        margin: auto;
+        
+                
 }
 .icon-envelope{
         margin-right: 10px;
         text-align: center;
         justify-content: center;
         color: #757575;
-        fill: currentColor;
-}
-.icon-envelope:hover, 
-.icon-envelope:focus{
-        color:#2196F3;
         
 }
-/*.email::before{
+/*.email-tel:hover, 
+.email-tel:focus{
+        color:#2196F3;
+        fill: currentColor;
+        
+}
+.email::before{
         width: 20px;
         height: 20px;
         content:"";
@@ -171,17 +186,20 @@ ul{
         url(../img/images/Img.jpg);
 }
 .button-order{
-        background: #F5F4FA;
+        
         font-weight: 700;
         font-size: 16px;
         line-height: 1.8;
         letter-spacing: 0.06em;
+        background:#2196F3;
         color: #FFFFFF;
-        cursor: pointer;
+        
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
         border-radius: 4px;  
         padding: 10px 32px ;   
-        margin-top: 40px;  
+        margin-top: 40px;
+        cursor: pointer;
 }
 
 .subtitle{
@@ -204,10 +222,14 @@ ul{
         width: 270px;
 }
 .icon-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        width: 270px;
+        height: 120px;
         margin-bottom: 30px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+
         background-color: #F5F4FA;
         border-radius: 4px;
 
@@ -265,8 +287,10 @@ ul{
         gap: 30px;
 }
 .foto{
-        background: #F5F4FA;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;       
 }
 .name{
@@ -276,7 +300,7 @@ ul{
         letter-spacing: 0.03em;
         color: var(--main-secon-color);
         text-align: center;
-        padding-bottom: 10px;        
+        margin-bottom: 10px;
 }
 .job{
         font-weight: 400;
@@ -285,6 +309,7 @@ ul{
         letter-spacing: 0.03em;
         color: var(--main-color);
         text-align: center;
+        margin-bottom: 16px;
 
 }
 .name-job{
@@ -294,12 +319,12 @@ ul{
 }
 .teamled-social{
         display: flex;
+        justify-content: center;
         width: 206px;
         height: 44px;
-        margin-top: 16px;
+
+        gap: 10px;
         margin-left: 32px;
-        padding:0;
-        justify-content: center;
 }
 .social-icon{
         fill: currentColor;
@@ -333,12 +358,12 @@ ul{
         line-height: 42px;
         text-align: center;       
         color: #212121;
+        margin-bottom: 50px;
 }
 .icon-client{
         display: block;
         width: 170px;
         height: 92px;
-        margin-top: 50px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         color: #AFB1B8;
@@ -500,14 +525,15 @@ ul{
         margin-bottom: 0;
         gap: 30px;      
 } 
-.box-project:first-child{
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .box-project{
-        box-sizing: border-box;
+        display: block;
         margin: auto;
         background: #FFFFFF;
-                
+               
+}
+.box-project:hover{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-text{
         border-bottom: 1px solid #ECECEC ;
