@@ -52,9 +52,10 @@ ul{
 }
 .nav li{
         display: block;
-}
-.nav li, .email-tel:not(last-child){
         margin-right: 50px;
+}
+.nav li:last-child{
+        margin-right: 0px;
 }
 .link{
         font-family: 'Raleway';
@@ -64,7 +65,7 @@ ul{
         line-height: 1.2;
         letter-spacing: 0.03em;
         color: #2196F3;
-        margin-left:auto;
+
         
 }
 .link-text{
@@ -123,7 +124,7 @@ ul{
 }
 .email-tel{
         display: flex;
-        margin: auto;
+        margin-left: auto;
         
                 
 }
